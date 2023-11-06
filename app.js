@@ -5,10 +5,10 @@ if(process.env.NODE_ENV !== "production")
 
 
 
-const http = require("http");
+// const http = require("http");
 const Express = require("express");
 const app = Express();
-const hostname = '127.0.0.1';
+// const hostname = '127.0.0.1';
 const port = 80;
 
 const bodyParser = require('body-parser');
