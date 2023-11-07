@@ -2,20 +2,31 @@ if(process.env.NODE_ENV !== "production")
 {
     require("dotenv").config();
 }
+const mongoose = require('mongoose');
 
+
+main().then(res => console.log("db connected successfuly"));
+main().catch(err => console.log("db not connected..!!!", err));
+
+async function main() {
+  await mongoose.connect(process.env.DB);
+
+
+  
+}
 
 
 
 const Express = require("express");
 const app = Express();
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 5000;
 
 const bodyParser = require('body-parser');
 
 
 
-require('./src/config/database');
+
 
 const my_routes = require('./src/routes/user_routes/users_routes/index');
 
