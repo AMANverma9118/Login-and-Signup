@@ -29,6 +29,6 @@ app.get('/',(req,res)=>{
 
 app.use('/',my_routes);
 
-app.listen(process.env.PORT,()=>{
+app.listen(port,()=>{
     console.log(`Server running at http://localhost:${port}`);  
 })
