@@ -9,7 +9,7 @@ if(process.env.NODE_ENV !== "production")
 const Express = require("express");
 const app = Express();
 
-const port = 80;
+const port = process.env.PORT || 80;
 
 const bodyParser = require('body-parser');
 
