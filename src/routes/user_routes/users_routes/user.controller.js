@@ -26,7 +26,7 @@ const sendresetPasswordMail = async (UserName, UserEmail, token) => {
             from: config.emailUser,
             to: UserEmail,
             subject: 'Reset Password',
-            html: '<p>Hii '+UserName+',Please copy the link  and <a href="http://localhost:80/Reset-password?token='+token+'"> reset your password </a></p>'
+            html: '<p>Hii '+UserName+',Please copy the link  and <a href="https://authentication-zgbr.onrender.com/Reset-password?token='+token+'"> reset your password </a></p>'
         };
 
         transporter.sendMail(mailOptions, function (error, info) {
