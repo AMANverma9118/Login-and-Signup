@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const nodemailer = require('nodemailer');
 const randomstring = require('randomstring');
 const users = require('../../../models/users');
-const config = require ('/Complete Web Development/Login-and-Signup/config/config.js');
+const config = require ('/Complete Web Development/Login-and-Signup/config.js');
 
 const sendresetPasswordMail = async (UserName, UserEmail, token) => {
     try {
